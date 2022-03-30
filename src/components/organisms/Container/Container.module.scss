@@ -1,0 +1,12 @@
+@import "../../../scss/utils/variables";
+@import "../../../scss/utils/mixins";
+
+.container {
+    width: rem(1600);
+    margin: 0 auto;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}

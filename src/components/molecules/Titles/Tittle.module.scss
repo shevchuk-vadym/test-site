@@ -1,0 +1,11 @@
+@import "../../../scss/utils/variables";
+@import "../../../scss/utils/mixins";
+
+.tittle {
+    width: rem(150);
+    display: flex;
+    flex-direction: column;
+    & > :first-child {
+        margin-bottom: rem(5);
+    }
+}

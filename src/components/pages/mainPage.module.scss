@@ -1,0 +1,9 @@
+@import "../../scss/utils/variables";
+@import "../../scss/utils/mixins";
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: url(../assets/mainPhoto.svg) no-repeat top;
+    padding: rem(460) rem(50) rem(30) rem(50);
+}

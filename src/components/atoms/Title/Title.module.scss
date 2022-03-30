@@ -1,0 +1,7 @@
+@import "../../../scss/utils/variables";
+@import "../../../scss/utils/mixins";
+
+.title {
+    @include text-style-t2();
+    font-size: rem(50);
+}

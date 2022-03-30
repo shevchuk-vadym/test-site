@@ -1,0 +1,11 @@
+@import "../../../scss/utils/variables";
+@import "../../../scss/utils/mixins";
+
+.container {
+    width: rem(380);
+    // background: green url(../../assets/slate/slate_1.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin: rem(10);
+}

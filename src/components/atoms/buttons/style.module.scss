@@ -1,0 +1,20 @@
+@import "../../../scss/utils/variables";
+@import "../../../scss/utils/mixins";
+
+.button {
+  @include reset-button();
+  @include text-style-t3();
+  font-size: rem(50);
+  padding: calc(var(--subline) * 2) calc(var(--subline) * 3);
+  border-radius: $radiusBig;
+  background: var(--color-D1-tint-a);
+
+  opacity: 1;
+  transition: opacity 0.3s $time-cubic-bezier;
+
+  @media (hover: hover) {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

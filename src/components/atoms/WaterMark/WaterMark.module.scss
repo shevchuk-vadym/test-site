@@ -1,0 +1,9 @@
+@import "../../../scss/utils/variables";
+@import "../../../scss/utils/mixins";
+
+.watermark {
+    width: rem(50);
+    height: rem(50);
+    background: url(../../assets/Ellipse.svg) no-repeat center;
+    background-size: cover;
+}

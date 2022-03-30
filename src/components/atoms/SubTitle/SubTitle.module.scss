@@ -1,0 +1,6 @@
+@import "../../../scss/utils/variables";
+@import "../../../scss/utils/mixins";
+
+.subTitle {
+    @include extra-title-h4();
+}
