@@ -1,8 +1,7 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import s from './WaterMark.module.scss';
-import image from '../../assets/Ellipse 245.svg';
 
-const WaterMark: FC<IMark> = () => <div className={`${s.watermark}`}>9</div>;
+const WaterMark: FC<IMark> = () => <div className={`${s.watermark}`}> </div>;
 
 interface IMark {
   className?: string;

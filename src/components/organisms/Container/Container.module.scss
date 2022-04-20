@@ -2,11 +2,12 @@
 @import "../../../scss/utils/mixins";
 
 .container {
-    width: rem(1600);
+    width: rem(1500);
     margin: 0 auto;
     min-height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     justify-items: center;
+    position: relative;
 }

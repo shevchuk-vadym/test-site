@@ -1,30 +1,18 @@
-import React, { FC } from 'react';
-import Content from '../../molecules/Content/Content';
+import { FC } from 'react';
+import Card from '../../molecules/Card/Card';
+
 import s from './Container.module.scss';
 
-const Container: FC<IContainer> = ({ subTitle, title, className }) => (
-  <div className={`${s.container} ${className}`}>
-    <Content subTitle={subTitle} title={title} />
-    <Content subTitle={subTitle} title={title} />
-    <Content subTitle={subTitle} title={title} />
-    <Content subTitle={subTitle} title={title} />
-    <Content subTitle={subTitle} title={title} />
-    <Content subTitle={subTitle} title={title} />
-    <Content subTitle={subTitle} title={title} />
-    <Content subTitle={subTitle} title={title} />
-    <Content subTitle={subTitle} title={title} />
-    <Content subTitle={subTitle} title={title} />
-    <Content subTitle={subTitle} title={title} />
-    <Content subTitle={subTitle} title={title} />
-    <Content subTitle={subTitle} title={title} />
-    <Content subTitle={subTitle} title={title} />
-    <Content subTitle={subTitle} title={title} />
-    <Content subTitle={subTitle} title={title} />
-  </div>
-);
+const Container: FC<IContainer> = ({ images, className }) => {
+  const items = images.map((imageUrl) => <Card {...{ imageUrl }} />);
+  return (
+    <div className={`${s.container} ${className}`}>
+      {items}
+    </div>
+  );
+};
 interface IContainer {
-  subTitle: string;
-  title: string;
+  images: string[];
   className?: string;
 }
 Container.defaultProps = {

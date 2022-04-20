@@ -2,6 +2,9 @@
 @import "../../../scss/utils/mixins";
 
 .watermark {
+    position: absolute;
+    left: 20px;
+    top: 20px;
     width: rem(50);
     height: rem(50);
     background: url(../../assets/Ellipse.svg) no-repeat center;

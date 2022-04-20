@@ -1,23 +1,22 @@
 import React, { FC } from 'react';
 import Sale from '../../atoms/Title/Title';
 import Season from '../../atoms/SubTitle/SubTitle';
-import WaterMark from '../../atoms/WaterMark/WaterMark';
-import s from './Tittle.module.scss';
+import s from './Markup.module.scss';
 
-const Tittle: FC<ITittle> = ({ title, subTitle, className }) => (
+const Markup: FC<IMarkup> = ({ title, subTitle, className }) => (
   <div className={`${s.tittle} ${className}`}>
-    <Sale>{title}</Sale>
-    <Season>{subTitle}</Season>
+    <Sale>{subTitle}</Sale>
+    <Season>{title}</Season>
   </div>
 );
 
-interface ITittle {
+interface IMarkup {
   subTitle: React.ReactNode;
   title: React.ReactNode;
   className?: string;
 }
 
-Tittle.defaultProps = {
+Markup.defaultProps = {
   className: '',
 };
-export default Tittle;
+export default Markup;
